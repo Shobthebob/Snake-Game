@@ -198,6 +198,63 @@ main {
     font-size: 1.2em;
 }
 
+.dev-section {
+    text-align: center;
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dev-section h3 {
+    color: white;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(36, 41, 46, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.github-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(36, 41, 46, 0.6);
+    background: linear-gradient(135deg, #2f363d 0%, #24292e 100%);
+}
+
+.github-link:active {
+    transform: translateY(0);
+}
+
+.github-logo {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+    background: #000000;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.github-link:hover .github-logo {
+    transform: rotate(360deg);
+}
+
 footer {
     text-align: center;
     margin-top: 30px;
@@ -238,6 +295,15 @@ footer {
     .control-grid {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .dev-section {
+        margin-top: 30px;
+        padding: 20px;
+    }
+
+    .dev-section h3 {
+        font-size: 1.2em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -260,6 +326,16 @@ footer {
 
     .control-item {
         padding: 10px;
+        font-size: 1em;
+    }
+
+    .dev-section {
+        margin-top: 25px;
+        padding: 15px;
+    }
+
+    .github-link {
+        padding: 12px 24px;
         font-size: 1em;
     }
 }
