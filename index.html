@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Snake Game 🐍</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐍 Cozy Snake Game</h1>
+            <div class="score-container">
+                <div class="score">
+                    <span class="label">Score:</span>
+                    <span id="current-score">0</span>
+                </div>
+                <div class="score">
+                    <span class="label">High Score:</span>
+                    <span id="high-score">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-container">
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+                <div class="game-overlay" id="gameOverlay">
+                    <div class="overlay-content">
+                        <h2 id="overlayTitle">🎮 Ready to Play?</h2>
+                        <p id="overlayMessage">Click Start, then use arrow keys or WASD to move</p>
+                        <button id="startBtn" class="btn">Start Game</button>
+                        <button id="restartBtn" class="btn" style="display: none;">Play Again</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <h3>🎮 Controls</h3>
+                <div class="control-grid">
+                    <div class="control-item">↑ W</div>
+                    <div class="control-item">↓ S</div>
+                    <div class="control-item">← A</div>
+                    <div class="control-item">→ D</div>
+                </div>
+                <div class="game-info">
+                    <div class="info-item">
+                        <span class="emoji">🍎</span>
+                        <span>Eat apples to grow</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="emoji">🚫</span>
+                        <span>Don't hit walls or yourself</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="emoji">⚡</span>
+                        <span>Speed increases as you grow</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ for cozy gaming</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
