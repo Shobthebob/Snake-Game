@@ -2,6 +2,8 @@
 
 A beautiful, modern web-based Snake game with a cozy UI design. Built with vanilla HTML, CSS, and JavaScript.
 
+🎮 **[Play the Game Live!](https://snake-shob.netlify.app/)** 🎮
+
 ## Features
 
 ### 🎮 Gameplay
